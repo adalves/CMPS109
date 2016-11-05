@@ -1,0 +1,11 @@
+// $Id: README,v 1.3 2016-01-30 21:22:15-08 - - $
+
+Ana Carolina Alves
+adalves@ucsc.edu
+Jan 29 2016
+asg2 - CMPS109
+yshell - in memory simulated tree shell
+
+Reference:
+http://stackoverflow.com/questions/14265581
+/parse-split-a-string-in-c-using-string-delimiter-standard-c

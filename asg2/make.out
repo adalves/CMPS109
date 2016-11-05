@@ -1,0 +1,408 @@
+file_sys.cpp: In member function ‘wordvec& inode_state::cat(const string&)’:
+file_sys.cpp:82:13: error: no match for ‘operator!=’ (operand types are ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ and ‘std::map<std::basic_string<char>, std::shared_ptr<inode> >::iterator {aka std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, std::shared_ptr<inode> > >}’)
+    if (temp != dirents.end())
+             ^
+file_sys.cpp:82:13: note: candidates are:
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iosfwd:40:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/postypes.h:221:5: note: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/postypes.h:221:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::fpos<_StateT>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_algobase.h:64:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_pair.h:227:5: note: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_pair.h:227:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::map<std::basic_string<char>, std::shared_ptr<inode> >::iterator {aka std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, std::shared_ptr<inode> > >}’ is not derived from ‘const std::pair<_T1, _T2>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:304:5: note: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:304:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:354:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:354:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:1060:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:1060:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::move_iterator<_Iterator>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:1066:5: note: template<class _Iterator> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:1066:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::move_iterator<_Iterator>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/string:41:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:42,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/allocator.h:138:5: note: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/allocator.h:138:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::allocator<_CharT>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/string:41:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:42,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/allocator.h:143:5: note: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/allocator.h:143:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::allocator<_CharT>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/string:52:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:42,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/basic_string.h:2551:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/basic_string.h:2551:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/string:52:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:42,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/basic_string.h:2563:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/basic_string.h:2563:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   mismatched types ‘const _CharT*’ and ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/string:52:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:42,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/basic_string.h:2575:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/basic_string.h:2575:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/locale_facets.h:48:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/basic_ios.h:37,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:44,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/streambuf_iterator.h:210:5: note: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/tuple:39:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/unordered_map:41,
+                 from file_sys.cpp:6:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/array:237:5: note: template<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/array:237:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::array<_Tp, _Nm>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/unordered_map:41:0,
+                 from file_sys.cpp:6:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/tuple:870:5: note: template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Elements ...>&, const std::tuple<_Elements ...>&)
+     operator!=(const tuple<_TElements...>& __t,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/tuple:870:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::tuple<_Elements ...>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/unordered_map:48:0,
+                 from file_sys.cpp:6:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/unordered_map.h:1456:5: note: template<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&, const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&)
+     operator!=(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/unordered_map.h:1456:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/unordered_map:48:0,
+                 from file_sys.cpp:6:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/unordered_map.h:1468:5: note: template<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator!=(const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>&, const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>&)
+     operator!=(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/unordered_map.h:1468:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:79:0,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/functional:2523:5: note: template<class _Res, class ... _Args> bool std::operator!=(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)
+     operator!=(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/functional:2523:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::function<_Res(_ArgTypes ...)>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:79:0,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/functional:2529:5: note: template<class _Res, class ... _Args> bool std::operator!=(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)
+     operator!=(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/functional:2529:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   cannot convert ‘temp’ (type ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’) to type ‘std::nullptr_t’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:81:0,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/unique_ptr.h:641:5: note: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator!=(const unique_ptr<_Tp, _Dp>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/unique_ptr.h:641:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:81:0,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/unique_ptr.h:647:5: note: template<class _Tp, class _Dp> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator!=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/unique_ptr.h:647:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:81:0,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/unique_ptr.h:652:5: note: template<class _Tp, class _Dp> bool std::operator!=(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator!=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/unique_ptr.h:652:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   cannot convert ‘temp’ (type ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’) to type ‘std::nullptr_t’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr.h:52:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:82,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1198:5: note: template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)
+     operator!=(const __shared_ptr<_Tp1, _Lp>& __a,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1198:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::__shared_ptr<_Tp1, _Lp>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr.h:52:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:82,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1204:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)
+     operator!=(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1204:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr.h:52:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:82,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1209:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)
+     operator!=(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1209:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   cannot convert ‘temp’ (type ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’) to type ‘std::nullptr_t’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:82:0,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr.h:349:5: note: template<class _Tp1, class _Tp2> bool std::operator!=(const std::shared_ptr<_Tp1>&, const std::shared_ptr<_Tp2>&)
+     operator!=(const shared_ptr<_Tp1>& __a,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr.h:349:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::shared_ptr<_Tp1>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:82:0,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr.h:355:5: note: template<class _Tp> bool std::operator!=(const std::shared_ptr<_Tp1>&, std::nullptr_t)
+     operator!=(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr.h:355:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::shared_ptr<_Tp1>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/memory:82:0,
+                 from file_sys.h:9,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr.h:360:5: note: template<class _Tp> bool std::operator!=(std::nullptr_t, const std::shared_ptr<_Tp1>&)
+     operator!=(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/shared_ptr.h:360:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   cannot convert ‘temp’ (type ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’) to type ‘std::nullptr_t’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/map:60:0,
+                 from file_sys.h:10,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_tree.h:329:5: note: template<class _Val> bool std::operator!=(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)
+     operator!=(const _Rb_tree_iterator<_Val>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_tree.h:329:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::_Rb_tree_iterator<_Tp>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/map:60:0,
+                 from file_sys.h:10,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_tree.h:990:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator!=(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator!=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_tree.h:990:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/map:61:0,
+                 from file_sys.h:10,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_map.h:1024:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_map.h:1024:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/map:62:0,
+                 from file_sys.h:10,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_multimap.h:927:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_multimap.h:927:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/vector:64:0,
+                 from file_sys.h:11,
+                 from file_sys.cpp:11:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_vector.h:1535:5: note: template<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_vector.h:1535:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++allocator.h:33:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/allocator.h:46,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/string:41,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:42,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ext/new_allocator.h:144:5: note: template<class _Tp> bool __gnu_cxx::operator!=(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator!=(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ext/new_allocator.h:144:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const __gnu_cxx::new_allocator<_Tp>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:829:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:829:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+    if (temp != dirents.end())
+                            ^
+In file included from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ios:40,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/ostream:38,
+                 from /opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/iostream:39,
+                 from file_sys.cpp:4:
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:822:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+/opt/rh/devtoolset-3/root/usr/include/c++/4.9.2/bits/stl_iterator.h:822:5: note:   template argument deduction/substitution failed:
+file_sys.cpp:82:28: note:   ‘std::pair<std::basic_string<char>, std::shared_ptr<inode> >’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+    if (temp != dirents.end())
+                            ^
+make: *** [file_sys.o] Error 1
